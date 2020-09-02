@@ -9,7 +9,6 @@ import org.springframework.context.annotation.PropertySource;
 public class HiProperties {
 
     public String defaultName() {
-        System.out.println("name = " + name);
         return name;
     }
 
