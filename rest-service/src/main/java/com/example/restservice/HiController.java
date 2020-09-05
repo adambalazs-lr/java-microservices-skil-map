@@ -3,6 +3,7 @@ package com.example.restservice;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -25,16 +26,26 @@ public class HiController {
 
     @GetMapping("/configured")
     public Hi greeting() {
-        return new Hi(String.format(template,  hiProperties.defaultName()));
+        return new Hi(String.format(template, hiProperties.defaultName()));
     }
 
     @GetMapping("/foo")
     public Hi foo() {
-        return new Hi(String.format(template, foo ));
+        return new Hi(String.format(template, foo));
     }
 
     @Value("${foo}")
     private String foo;
+
+
+    @RequestMapping("/")
+    public String ribbonPing() {
+        return port.toString();
+    }
+
+
+    @Value("${server.port}")
+    private Integer port;
 
 
 }
