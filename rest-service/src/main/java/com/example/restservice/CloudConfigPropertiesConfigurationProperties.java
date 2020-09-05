@@ -2,7 +2,7 @@ package com.example.restservice;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
-@ConfigurationProperties
+@ConfigurationProperties("")
 public class CloudConfigPropertiesConfigurationProperties {
 
     public void setFoo(String foo) {
