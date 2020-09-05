@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@EnableFeignClients
 public class GreetingsController {
 
     private final GreetingsClient client;
@@ -18,8 +17,8 @@ public class GreetingsController {
         this.client = client;
     }
 
-    @GetMapping("/getGreetings")
-    public List<GreetingsResponse> getGreetings(){
+    @GetMapping("/getGreeting")
+    public GreetingsResponse getGreeting(){
         return client.getGreetings();
     }
 }

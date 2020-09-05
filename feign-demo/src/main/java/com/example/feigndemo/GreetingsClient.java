@@ -12,6 +12,6 @@ import java.util.List;
 public interface GreetingsClient {
 
     @GetMapping("/greeting")
-    List<GreetingsResponse> getGreetings();
+    GreetingsResponse getGreetings();
 
 }
