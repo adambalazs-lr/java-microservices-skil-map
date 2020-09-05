@@ -6,7 +6,8 @@ FEIGN-DEMO:
 {"name":"O hai, Mark!"}
 ```
 
-`http://localhost:8081/getGreetingRestTemplate`
+`http://localhost:8081/greeting`
+
 ```json
 {"name":"O hai, You!"}
 ```

@@ -24,7 +24,7 @@ public class GreetingsController {
         return client.getGreetings();
     }
 
-    @GetMapping("/getGreetingRestTemplate")
+    @GetMapping("/greeting")
     public GreetingsResponse getGreetingRestTemplate(){
         String uri = "http://localhost:8080/greeting?name=You";
         GreetingsResponse forObject = restTemplate.getForObject(uri, GreetingsResponse.class);
