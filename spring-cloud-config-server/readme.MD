@@ -1,19 +1,19 @@
-`http://localhost:8888/config-client/dev/2A`
+`http://localhost:8888/rest-service/dev/2A`
 
 ```json
 {
-	"name": "config-client",
+	"name": "rest-service",
 	"profiles": ["dev"],
-	"label": "master",
-	"version": "fa5dfadd8e849c898f87b59e04d6f32e8f740fc2",
+	"label": "2A",
+	"version": "18e14520005d3da65a2c2412c21b8328e35d1bb6",
 	"state": null,
 	"propertySources": [{
-		"name": "https://github.com/adambalazs-lr/spring-boot-config-demo.git/application-dev.yml",
+		"name": "https://github.com/adambalazs-lr/spring-boot-config-demo.git/rest-service-dev.yml",
 		"source": {
 			"foo": "dev"
 		}
 	}, {
-		"name": "https://github.com/adambalazs-lr/spring-boot-config-demo.git/application.yml",
+		"name": "https://github.com/adambalazs-lr/spring-boot-config-demo.git/rest-service.yml",
 		"source": {
 			"hello": "World"
 		}
@@ -21,22 +21,22 @@
 }
 ```
 
-`http://localhost:8888/config-client/qa/2A`
+`http://localhost:8888/rest-service/qa/2A`
 
 ```json
 {
-	"name": "config-client",
+	"name": "rest-service",
 	"profiles": ["qa"],
-	"label": "master",
-	"version": "fa5dfadd8e849c898f87b59e04d6f32e8f740fc2",
+	"label": "2A",
+	"version": "18e14520005d3da65a2c2412c21b8328e35d1bb6",
 	"state": null,
 	"propertySources": [{
-		"name": "https://github.com/adambalazs-lr/spring-boot-config-demo.git/application-qa.yml",
+		"name": "https://github.com/adambalazs-lr/spring-boot-config-demo.git/rest-service-qa.yml",
 		"source": {
 			"foo": "qa"
 		}
 	}, {
-		"name": "https://github.com/adambalazs-lr/spring-boot-config-demo.git/application.yml",
+		"name": "https://github.com/adambalazs-lr/spring-boot-config-demo.git/rest-service.yml",
 		"source": {
 			"hello": "World"
 		}
@@ -45,22 +45,22 @@
 ```
 
 
-`http://localhost:8888/config-client/prod/2A`
+`http://localhost:8888/rest-service/prod/2A`
 
 ```json
 {
-	"name": "config-client",
+	"name": "rest-service",
 	"profiles": ["prod"],
-	"label": "master",
-	"version": "fa5dfadd8e849c898f87b59e04d6f32e8f740fc2",
+	"label": "2A",
+	"version": "18e14520005d3da65a2c2412c21b8328e35d1bb6",
 	"state": null,
 	"propertySources": [{
-		"name": "https://github.com/adambalazs-lr/spring-boot-config-demo.git/application-prod.yml",
+		"name": "https://github.com/adambalazs-lr/spring-boot-config-demo.git/rest-service-prod.yml",
 		"source": {
 			"foo": "prod"
 		}
 	}, {
-		"name": "https://github.com/adambalazs-lr/spring-boot-config-demo.git/application.yml",
+		"name": "https://github.com/adambalazs-lr/spring-boot-config-demo.git/rest-service.yml",
 		"source": {
 			"hello": "World"
 		}
