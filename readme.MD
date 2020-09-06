@@ -5,6 +5,8 @@
 | spring-cloud-config-server | cloud config server | http://localhost:8888/config-client/development/master |
 | greeter | ribbon demo  | http://localhost:9090/invoke |
 | eureka service | Eureka Service | http://localhost:8761/ |
+| zool service | Zuul Service | http://localhost:8084/rest/greeting |
+
 
 
 
