@@ -23,6 +23,9 @@ ext {
 }
 
 dependencies {
+
+	implementation 'org.springframework.cloud:spring-cloud-starter-sleuth'
+
 	// https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-netflix-eureka-client
 	compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-netflix-eureka-client', version: '2.1.6.RELEASE'
 
