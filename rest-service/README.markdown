@@ -17,3 +17,11 @@ check eureka `http://localhost:8761/` eureka for the actual ip of a rest-service
 ```
 *** message from kafka through cloud bus reveiced: Hello World!
 ```
+
+#### 3F:
+
+Run eureka, zipkin-demo-backend, a kafka server on localhost:9092, rest-service and zipkin server.
+
+`http://localhost:8080/zipkintest` -> kafka -> zipkin-demo-backend
+
+Check the logs in the zipkin server.

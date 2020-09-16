@@ -1,6 +1,6 @@
 spring:
   application:
-    name: rest-service
+    name: zipkin-demo-backend
   cloud:
     config:
       uri: http://localhost:8888
@@ -30,13 +30,9 @@ management:
     info:
       enabled: true
 server:
-  port: 8080
+  port: 8083
 
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
-
-#logging:
-#  level:
-#    ROOT: TRACE

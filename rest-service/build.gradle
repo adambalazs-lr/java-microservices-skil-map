@@ -17,8 +17,14 @@ ext {
 
 dependencies {
 
+	// https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-zipkin
+	compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-zipkin', version: '2.1.7.RELEASE'
+
+	// https://mvnrepository.com/artifact/org.springframework.kafka/spring-kafka
+	compile group: 'org.springframework.kafka', name: 'spring-kafka', version: '2.4.8.RELEASE'
+
 	// https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-bus-kafka
-	compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-bus-kafka', version: '2.2.3.RELEASE'
+	compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-bus-kafka', version: '2.1.4.RELEASE'
 
 	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-actuator
 	compile group: 'org.springframework.boot', name: 'spring-boot-starter-actuator', version: '2.3.3.RELEASE'
